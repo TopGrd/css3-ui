@@ -2,7 +2,7 @@
 * @Author: Li'Zhuo
 * @Date:   2016-03-25 12:17:03
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-03-25 17:22:48
+* @Last Modified time: 2016-03-25 18:03:21
 */
 
 .container {
@@ -236,5 +236,124 @@
     100% { 
         -webkit-transform: rotate(360deg) scale(1);
                 transform: rotate(360deg) scale(1);
+     }
+}
+
+.tj {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid #ccc;
+    animation: tj 2s linear 0s infinite;
+}
+.tj-w, .tj-b {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+.tj-w {
+    left: 0;
+    background-color: white;
+    border-radius: 100% 0 0 100%/50% 0 0 50%;
+}
+.tj-b {
+    right: 0;
+    background-color: black;
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+}
+
+.tj-w-y {
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    top: 0;
+    left: 25%;
+    border-radius: 50%;
+    position: absolute;
+}
+.tj-w-y-y {
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    top: 37.5%;
+    left: 37.5%;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.tj-b-y {
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    bottom: 0;
+    left: 25%;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.tj-b-y-y {
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    bottom: 37.5%;
+    left: 37.5%;
+    border-radius: 50%;
+    background-color: white;
+}
+
+@-webkit-keyframes tj {
+    0% { 
+        transform: rotate(0deg);
+     }
+     50% {
+        transform: rotate(180deg);
+     }
+    100% { 
+        transform: rotate(360deg);
+     }
+}
+@-moz-keyframes  {
+    0% { 
+        transform: rotate(0deg);
+     }
+     50% {
+        transform: rotate(180deg);
+     }
+    100% { 
+        transform: rotate(360deg);
+     }
+}
+@-ms-keyframes  {
+    0% { 
+        transform: rotate(0deg);
+     }
+     50% {
+        transform: rotate(180deg);
+     }
+    100% { 
+        transform: rotate(360deg);
+     }
+}
+@-o-keyframes  {
+    0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(180deg);
+      }
+    100% { 
+        transform: rotate(360deg);
+     }
+}
+@keyframes  {
+    0
+        transform: rotate(0deg);
+    % {  }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% { 
+        transform: rotate(360deg);
      }
 }
