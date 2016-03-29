@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="loading.css">
+        <script src="https://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.js"></script>
     </head>
     <body>
     <div class="container">
@@ -47,8 +48,18 @@
                 </div>
             </div>
         </div>
-        <div class="loading"></div>
+        <div class="loading">
+             <div class="heart"></div>
+        </div>
         <div class="loading"></div>
     </div>
     </body>
+    <script type="text/javascript">
+        $('.heart').on('click', function() {
+            $(this).toggleClass('animationed');
+        });
+        $('.heart').on('animationend', function() {
+            $(this).toggleClass('animationed');
+        });
+    </script>
 </html>

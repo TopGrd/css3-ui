@@ -2,7 +2,7 @@
 * @Author: Li'Zhuo
 * @Date:   2016-03-25 12:17:03
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-03-25 18:04:47
+* @Last Modified time: 2016-03-29 11:47:16
 */
 
 .container {
@@ -342,4 +342,29 @@
         -webkit-transform: rotate(360deg); 
                 transform: rotate(360deg);
      }
+}
+
+.heart {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background-image: url('img/web_heart_animation.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 2900%;
+}
+
+.animationed {
+    animation: heart .8s steps(28) 1;
+}
+.heart:hover {
+    background-position: right;
+}
+@keyframes heart{
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
 }
