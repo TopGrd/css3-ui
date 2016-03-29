@@ -2,7 +2,7 @@
 * @Author: Li'Zhuo
 * @Date:   2016-03-25 12:17:03
 * @Last Modified by:   Administrator
-* @Last Modified time: 2016-03-29 11:47:16
+* @Last Modified time: 2016-03-29 12:07:21
 */
 
 .container {
@@ -317,32 +317,7 @@
                 transform: rotate(360deg);
      }
 }
-@-webkit-keyframes  {
-    0
-        transform: rotate(0deg);
-    % {  }
-    50% {
-        -webkit-transform: rotate(180deg);
-                transform: rotate(180deg);
-    }
-    100% { 
-        -webkit-transform: rotate(360deg); 
-                transform: rotate(360deg);
-     }
-}
-@keyframes  {
-    0
-        transform: rotate(0deg);
-    % {  }
-    50% {
-        -webkit-transform: rotate(180deg);
-                transform: rotate(180deg);
-    }
-    100% { 
-        -webkit-transform: rotate(360deg); 
-                transform: rotate(360deg);
-     }
-}
+
 
 .heart {
     width: 100px;
